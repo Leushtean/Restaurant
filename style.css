@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url(global.css);
 
 
@@ -6,7 +7,125 @@
 .header{
     background-image: url("images/bg-hero.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
+}
+.header-line{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: wheat;
+}
+.header-logo{
+    margin-right: 100px;
+}
+.nav-list{
+    display: flex;
+    gap: 40px;
+}
+.nav-link:hover{
+    color: #EA5B03;
+}
+.nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    color: wheat;
+    text-transform: uppercase;
+}
+
+.cart{
+    position: relative;
+    border-right: 2px solid #EA5B03;
+    padding-right: 40px;
+    height: 50px;
+}
+.cart-icon{
+    position: absolute;
+    transform: translateY(50%);
+}
+.num{
+    font-size: 20px;
+    font-weight: 500;
+}
+.num:hover{
+    color: #EA5B03;
+}
+.phone-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #EA5B03;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+}
+.phone-icon{
+    padding-right: 20px;
+}
+.phone-icon img{
+    color: wheat;
+}
+
+.phone-holder{
+    display: flex;
+    align-items: center;
+}
+.header-down{
+    position: relative;
+}
+
+.header-title{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    color: #EA5B03;
+    font-size: 74px;
+    line-height: 120%;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    max-width: 730px;
+    margin-top: 140px;
+    text-transform: none;
+}
+
+.header-title span{
+    font-size: 100px;
+
+}
+.header-subtitle{
+    font-size: 30px;
+}
+.header-suptitle{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+.header-suptitle:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80px;
+    background-color: #fff;
+    top: 320px;
+    right: 110px;
+}
+.header-suptitle:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80px;
+    background-color: #fff;
+    top: 320px;
+    left: 117px;
+}
+.book-btn{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    padding: 14px 28px;
+    background-color: transparent;
+    border: 2px solid #EA5B03;
+    position: absolute;
+    right: 0;
+    margin-top: 22px;
 }
