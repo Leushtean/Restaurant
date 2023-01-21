@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400&display=swap');
 @import url(global.css);
 
 
@@ -74,8 +74,8 @@
 }
 
 .header-title{
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
     color: #EA5B03;
     font-size: 74px;
     line-height: 120%;
@@ -89,10 +89,14 @@
 
 .header-title span{
     font-size: 100px;
+    font-weight: 700;
 
 }
 .header-subtitle{
     font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4.0px;
+    font-style: italic;
 }
 .header-suptitle{
     font-family: "Poppins", sans-serif;
@@ -122,10 +126,172 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1;
-    padding: 14px 28px;
+    padding: 14px 20px;
     background-color: transparent;
-    border: 2px solid #EA5B03;
+    border: 1px solid #EA5B03;
     position: absolute;
     right: 0;
     margin-top: 22px;
+}
+.book-btn:hover{
+    border: 1px solid transparent;
+    background-color: #EA5B03;
+}
+.right-btn{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    padding: 14px 20px;
+}
+.cards{
+    margin-bottom: 160px;
+}
+.card{
+    width: 360px;
+    padding: 0 25px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    background-color: #fff;
+    margin-top: -80px;
+    font-family: 'Playfair Display', serif;
+}
+.card+.card{
+    margin-left: 45px;
+}
+
+.cards-section,
+.card-image{
+    display: flex;
+    justify-content: center;
+}
+.card-descr,
+.card-text{
+    text-align: center;
+}
+.card-image{
+    padding-top: 35px;
+}
+.card-text{
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.card-text span{
+    color: #BC9060;
+}
+.card-descr{
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    color: #656363;
+}
+.history{
+    padding-bottom: 200px;
+}
+.history-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.history-text{
+    max-width: 440px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 20px;
+}
+.history-descr{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    margin: 28px 0 60px;
+}
+.history-imagine{
+    position: relative;
+    top: 130px;
+    right: 45px;
+}
+.history-statist{
+    display: flex;
+    max-width: 440px;
+    justify-content: center;
+}
+.number-item{
+    font-size: 50px;
+    text-align: center;
+    color: #BC9060;
+    /*border-bottom: 1px solid #BC9060;*/
+}
+.number-item ~.number-item{
+    margin-left: 60px;
+}
+.number-item span{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    color: #656363;
+    padding: 20px 0 8px;
+    border-bottom: 1px solid #BC9060;
+}
+.h_img-1{
+    position: absolute;
+    z-index: 997;
+    bottom: 250px;
+    right: 0;
+}
+.h_img-2{
+    position: absolute;
+    z-index: 996;
+    bottom: 284px;
+    right: 195px;
+}
+.h_img-3{
+    position: absolute;
+    z-index: 998;
+    bottom: 178px;
+    right: 300px;
+}
+.h_img-4{
+    position: absolute;
+    z-index: 998;
+    bottom: 95px;
+    right: 140px;
+}
+.h_img-5{
+    position: absolute;
+    z-index: 999;
+    bottom: 37px;
+    right: -25px;
+}
+.b__block-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    font-family: 'Playfair Display', serif;
+}
+.left__block-title{
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 58px;
+    color: #EA5B03;
+    margin-bottom: 40px;
+}
+.left__block-descr{
+    font-weight: 100;
+    font-size: 26px;
+    color: white;
+}
+
+
+
+.b__block{
+    background-image: url("images/block-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    min-height: 100%;
+    padding: 100px 0 100px;
+    margin-bottom: 160px;
 }
